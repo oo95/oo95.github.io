@@ -1,1 +1,193 @@
-hello arasi-tachi www
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>草</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#60a5fa;
+      --glass: rgba(255,255,255,0.04);
+      --max-width:900px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family:'Noto Sans JP', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(180deg,#071022 0%, #071626 60%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+      padding:32px 18px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--max-width);
+    }
+
+    header.site-header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:28px;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      text-decoration:none;
+      color:inherit;
+    }
+    .logo{
+      width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#031024;box-shadow:0 6px 18px rgba(2,6,23,0.6);
+    }
+    .site-title{font-size:18px;font-weight:600}
+    .site-desc{font-size:13px;color:var(--muted);margin-top:2px}
+
+    nav.top-nav{margin-left:auto}
+    nav.top-nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
+    nav.top-nav a:hover{color:var(--accent)}
+
+    main{display:block}
+
+    .hero{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent), var(--glass);
+      padding:26px;border-radius:12px;margin-bottom:22px;box-shadow:0 8px 24px rgba(2,6,23,0.6);
+    }
+    .hero h1{margin:0;font-size:28px}
+    .hero p{margin:8px 0 0;color:var(--muted)}
+
+    article.post{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:10px;padding:22px;margin-bottom:18px;box-shadow:0 6px 20px rgba(2,6,23,0.5);
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    article.post h2{margin:0 0 8px;font-size:20px}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:12px}
+    .post p{margin:0 0 12px}
+
+    .post .cover{
+      width:100%;height:220px;border-radius:8px;background:linear-gradient(135deg,#0b1220,#092235);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600;margin-bottom:12px;overflow:hidden;
+    }
+
+    .read-more{
+      display:inline-block;padding:8px 14px;border-radius:999px;background:linear-gradient(90deg,rgba(96,165,250,0.12),rgba(124,58,237,0.08));border:1px solid rgba(255,255,255,0.03);font-weight:600;color:var(--accent);text-decoration:none;margin-top:8px
+    }
+
+    footer.site-footer{color:var(--muted);font-size:13px;padding:20px 0;text-align:center}
+
+    /* small screens */
+    @media (max-width:560px){
+      .hero h1{font-size:20px}
+      .logo{width:48px;height:48px}
+    }
+
+    /* decorative rule between posts */
+    .spacer{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.02),transparent);margin:18px 0}
+
+    .hl_red{
+        color:red
+    }
+
+    .hl_cyan{
+        color:cyan
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="#">
+        <div class="logo"></div>
+        <div>
+          <div class="site-title">絵を直したい方へ。</div>
+          <div class="site-desc">下の絵を参考にして直してください！絵の作者は私なのでdlオッケーです。（右にリンク→）</div>
+        </div>
+      </a>
+      <nav class="top-nav" aria-label="メインリンク">
+        <a href="https://x.com/harukarin1250" target="_blank">X(Twitter)</a>
+
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" role="banner">
+        <img src="img/fubu.png" width="300" style="margin-left: auto; margin-right: auto; display: block;">
+      </section>
+
+      <article class="post">
+        <h2>『お知らせ』</h2>
+        <p>まぁ正直、荒しに関して私は全然気にしてないですwww。どうせあいつらは人生で達成した一番偉い実績がこれくらいしかない可哀想な生き物たちなんだからですねw</p>
+        <p>むしろその経過を眺めながらどうやったら</p>
+        <p>
+            <span class="hl_cyan">
+                1. 荒しの管理をしやすくしつつ、こいつらを邪魔するか
+                <br>
+                2. 直したい方へ元の画像を提供できるのか
+                <br>
+                3. 荒し達を晒すか
+                <br>
+                4. 普通に自分の広告用に使えるか
+            </span>
+        </p>
+        <p>を上手く出来るのかを企んでるのが楽しすぎて興奮しちゃいそうです！！！！！！！！！！(≧д≦)
+            <br>
+            それで考えたのがやっぱりQRコードからWEBページへアクセスできる形。今回はGithubを使ってこれを掲載しましたんですけど、ここにもちょっと拘りがあります。
+            荒しから復元しやすくする為QRコードのピクセルの数をできるまで減らす必要があります。QRコードに入力する文字数が短ければ短いほどQRコード自体が小さくなる
+            可能性が高くなるからまず、githubのユーザー名を最大限に短くします。３文字は流石にもうないから、４文字で頑張って探したら出来ました。これで第一関門はクリアです。
+        </p>
+        <p>さっさとgithubのレポジトリーを生成。適当にwebの基本要素を作ってpublic設定。
+            次の段階であるQRコードの生成はWEBに検索してみたら色んな所出てきますけど、最初は35X35ピクセルでしたので、総1225ピクセル。自分の制限は現在1090個なので足りません。
+            他の所もQR生成試してみたら25X25で出来た所もあった。一応これを候補とし、ChatGPTにこのリンクを一番小さいQRコードを作らせていただいたらなんと、21X21で出来ましたwww
+        </p>
+        <p>これで最悪全消しされても441ピクセルあったらまた作れます(笑)</p>
+
+        <p>長くなりましたが結論として、今できるベストの対策は多分これ :</p>
+        <p>
+            <span class="hl_red">
+                1. あいつらに一切餌をあげないこと。個人的に私は復元もそうだと思ってるからあえて直してないですw
+                <br>
+                2. 通報し続けること。多分何十回したけど運営さん動かんすぎて(泣く)。公式Discord鯖からも出来ます。
+            </span>
+        </p>
+
+        <p>あらゆるクリエイティブな方法を使って荒し達を怖がらせましょう♪</p>
+      </article>
+
+      <section class="hero" role="banner">
+        <h2>QR元画像も貼っておくw</h2>
+        <img src="img/qr.png" width="150" style="margin-left: auto; margin-right: auto; display: block;">
+      </section>
+
+      <article class="post">
+        <h2>『荒リスト』</h2>
+        <span class="hl_red">
+            <p>皇居護衛隊 #7323243</p>
+            <p>皇居護衛2 #10697338</p>
+            <p>V豚さよなら #10823366</p>
+            <p>VividHat #10824660</p>
+            <p>tamachan #6424199</p>
+            <p>信者ala #6909400</p>
+            <p>EarlyNovel #10030137</p>
+            <p>rinn_a #7319566 ←アート主の名前そのまま使って悪質すぎ</p>
+        </span>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      © 2025 ブーッキー
+    </footer>
+  </div>
+</body>
+</html>
